@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+    <link rel="stylesheet" href="libs/selectric/selectric.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="js/hystModal-0.4/src/hystmodal.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=e8eaf95f-54e3-4083-8a76-68504e3786f6&amp;lang=ru_RU" type="text/javascript"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!--link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css")-->
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="custommodalheadersearch" id="appSearch">
+        <div class="custommodalheadersearch--body">
+          <button>
+            <svg class="icon icon-searchBig searchBig__icon">
+              <use xlink:href="/img/svg/sprite.svg#searchBig"></use>
+            </svg>
+          </button>
+          <input placeholder="Перечень закупок у СМСП">
+        </div>
+      </div>
+      <div class="container">
+        <div class="header-content">
+          <nav class="nav" id="nav"> <a class="right__link" href="./"><i class="logo__header" id="logo_header"> 
+                <svg class="icon icon-logo main__logo">
+                  <use xlink:href="/img/svg/sprite.svg#logo"></use>
+                </svg></i></a>
+            <ul class="middle__links">
+              <li class="li__link" id="clients"><a href="/mapazs.html">Клиентам</a></li>
+              <li class="li__link" id="investor"><a href="/korporativnoyeupravleniye.html">Инвесторам</a></li>
+              <li class="li__link" id="zakupki"><a href="/market.html">Закупки</a></li>
+              <li class="li__link" id="company"><a href="/about.html">О компании          </a></li>
+              <li class="li__link"><a href="/novosti.html">Пресс-центр</a></li>
+              <li class="li__link"><a href="/contacts.html">Контакты</a></li>
+            </ul>
+            <ul class="left__links">
+              <li class="li__link"><a href="#">
+                  <button class="header__search" data-hystmodal="#modalSearchHeader">
+                    <svg class="icon icon-search header__search">
+                      <use xlink:href="/img/svg/sprite.svg#search"></use>
+                    </svg>
+                  </button></a></li>
+              <li class="li__link"><a href="#">
+                  <div class="header__cards">
+                    <svg class="icon icon-Vector header__card">
+                      <use xlink:href="/img/svg/sprite.svg#Vector"></use>
+                    </svg>
+                    <div>Топливные карты                          </div>
+                  </div></a></li>
+            </ul>
+            <div class="header__burger">
+              <svg class="icon icon-burgermenu burgermenu__link">
+                <use xlink:href="/img/svg/sprite.svg#burgermenu"></use>
+              </svg>
+              <svg class="icon icon-btnclose btnclose__link">
+                <use xlink:href="/img/svg/sprite.svg#btnclose"></use>
+              </svg>
+            </div>
+          </nav>
+          <ul class="mobile--header">
+            <li class="li__link" id="clients"><a href="/mapazs.html">Клиентам</a></li>
+            <li class="li__link" id="investor"><a href="/korporativnoyeupravleniye.html">Инвесторам</a></li>
+            <li class="li__link" id="zakupki"><a href="/market.html">Закупки</a></li>
+            <li class="li__link" id="company"><a href="/about.html">О компании          </a></li>
+            <li class="li__link"><a href="/novosti.html">Пресс-центр</a></li>
+            <li class="li__link"><a href="/contacts.html">Контакты</a></li>
+            <svg class="icon icon-btnclose burgermenu__link__btn">
+              <use xlink:href="/img/svg/sprite.svg#btnclose"></use>
+            </svg>
+          </ul>
+        </div>
+        <script src="./js/hystModal-0.4/dist/hystmodal.min.js"> </script>
+      </div>
+    </header>
+    <div class="container">
+      <div class="container">
+        <section> 
+          <div class="the-main-content"> 
+            <div class="left-menu-content">
+              <div class="left-menu-main"> 
+                <ul class="left-menu-main-links" id="left-menu-main-links"> 
+                  <ul class="left-menu-main-links--left" id="left-menu-main-links--left"> 
+                    <li class="left-menu-main-link"> <a href="/market.html">Маркет</a></li>
+                    <li class="left-menu-main-link"> <a href="/perechenzakupokusmsp.html">Перечень закупок у СМСП</a></li>
+                    <li class="left-menu-main-link"> <a href="/optovayarealizatsiya.html">Оптовая реализация</a></li>
+                    <li class="left-menu-main-link"> <a href="/zakupochnyyeprotsedury.html">Закупочные процедуры</a></li>
+                    <li class="left-menu-main-link"> <a href="/polozheniyeozakupke.html">Положение о закупке</a></li>
+                  </ul>
+                  <ul class="left-menu-main-links--right" id="left-menu-main-links--right"> 
+                    <li class="left-menu-main-link"> <a href="/planzakupki.html">План закупки</a></li>
+                    <li class="left-menu-main-link"> <a href="/skhemazavozanefteproduktov.html">Схема завоза нефтепродуктов</a></li>
+                    <li class="left-menu-main-link"> <a href="/uslugi.html">Услуги</a></li>
+                    <li class="left-menu-main-link"> <a href="/rnait.html">Реализация непрофильных активов, имущества и ТМЦ</a></li>
+                  </ul>
+                </ul>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+              </div>
+            </div>
+            <div class="right-content-main">
+              <h1 class="right-content-main--title">Маркет</h1>
+              <div class="market-content">
+                <form class="market-form"><span class="market-form-data"><span class="market-form-data--text">Дата размещения</span><span class="market-form-data--inputs">
+                      <input placeholder="Начало периода" type="date" id="market-form-datefirst" name="market-form-first" min="1995-12-07" max="2095-12-07">
+                      <input placeholder="Конец периода" type="date" id="market-form-datesecond" name="market-form-second" min="1995-12-07" max="2095-12-07"></span></span><span class="market-form-startprice"><span class="market-form-startprice--text">Начальная цена</span><span class="market-form-startprice--inputs">
+                      <input placeholder="Минимум" type="number" id="market-form-pricemin" name="market-form-pricemin">
+                      <input placeholder="Максимум" type="number" id="market-form-pricemax" name="market-form-pricemax"></span></span><span class="market-form-search"><span class="market-form-search--text">Поиск</span><span class="market-form-search--input">
+                      <input placeholder="Напишите предмет договора">
+                      <button class="market-form-search--btn">Найти</button></span></span></form>
+                <div class="market--botoom--table">
+                  <div class="zakupochnyyeprotsedury-body">
+                    <table class="zakupochnyyeprotsedury-table main-table another-table market-table">
+                      <tr>
+                        <td>Дата размещения</td>
+                        <td>Предмет договора</td>
+                        <td>Подача заявок до</td>
+                        <td>НМЦ</td>
+                      </tr>
+                      <tr class="grid-container">
+                        <td class="block1">05.04.2023 (11:58)</td>
+                        <td class="block2">Поставка материалов для нужд филиала «Ленская нефтебаза» АО «Саханефтегазсбыт» в 2023 году</td>
+                        <td class="block3">10.04.2023 (02:00)</td>
+                        <td class="block4">данные отсутствуют</td>
+                      </tr>
+                      <tr class="grid-container">
+                        <td class="block1"> 05.04.2023 (10:30)</td>
+                        <td class="block2"> Оказание услуг по предоставлению специализированной техники с экипажем (крановая установка) для объекта: «Техн...</td>
+                        <td class="block3"> 10.04.2023 (02:00)</td>
+                        <td class="block4"> данные отсутствуют</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="zakupochnyyeprotsedury-pagination">
+                  <div class="zakupochnyyeprotsedury-pagination--left">
+                    <label class="zakupochnyyeprotsedury-pagination--left-label" for="zakupochnyyeprotsedury-pagination--left">Показывать по:
+                      <select class="zakupochnyyeprotsedury-pagination--left-selector" name="zakupochnyyeprotsedury-pagination--left" id="zakupochnyyeprotsedury-pagination--left"> 
+                        <option value="2019">5</option>
+                        <option value="2020">10</option>
+                        <option value="2021">15</option>
+                        <option class="asdasd" value="2023" selected="selected">20</option>
+                      </select>
+                    </label><span>
+                      <svg class="icon icon-chevron-down chevron-down__select-icon">
+                        <use xlink:href="/img/svg/sprite.svg#chevron-down"></use>
+                      </svg></span>
+                  </div>
+                  <div class="zakupochnyyeprotsedury-pagination--right">
+                    <div class="zakupochnyyeprotsedury-pagination--right--back"><a>Пред </a></div>
+                    <div class="zakupochnyyeprotsedury-pagination--right--links">
+                      <ul>
+                        <li><a>1</a></li>
+                        <li><a>2</a></li>
+                        <li><a>3</a></li>
+                        <li><a>4</a></li>
+                        <li><a>5</a></li>
+                      </ul>
+                    </div>
+                    <div class="zakupochnyyeprotsedury-pagination--right--next"><a>След</a></div>
+                    <div class="zakupochnyyeprotsedury-pagination--right--end"><a>В конец</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script src="js/dropdown.js"></script>
+          </div>
+        </section>
+      </div>
+      <script src="./js/common.js"></script>
+    </div>
+    <footer class="footer" id="footer"> 
+      <div class="container"> 
+        <section class="footer-section">
+          <div class="footer-content">
+            <div class="footer-top">
+              <div class="footer-left">
+                <div class="footer-left-icon"><a class="right__link" href="./"><i class="logo__header" id="logo_header">
+                      <svg class="icon icon-mainlogowhite mainlogowhite__logo">
+                        <use xlink:href="/img/svg/sprite.svg#mainlogowhite"></use>
+                      </svg></i></a></div>
+                <div class="footer-left-links">
+                  <ul class="footer-left-links--ul">
+                    <li><a href="/mapazs.html">Клиентам</a></li>
+                    <li><a href="/korporativnoyeupravleniye.html">Инвесторам</a></li>
+                    <li><a href="/market.html">Закупки</a></li>
+                    <li><a href="/about.html">О компании</a></li>
+                    <li><a href="/contacts.html">Контакты</a></li>
+                    <li><a href="/novosti.html">Пресс-центр</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-right">
+                <div class="footer-right-con"><span>Топливные карты</span><a>+7-914-272-02-00</a></div>
+                <div class="footer-right-con"><span>Канцелярия (факс)</span><a>+7 (4112) 45-30-06</a></div>
+                <div class="footer-right-con">
+                  <ul class="footer-bottom--middle-table">
+                    <li><a>
+                        <svg class="icon icon-odnoklasniki social__link">
+                          <use xlink:href="/img/svg/sprite.svg#odnoklasniki"></use>
+                        </svg></a></li>
+                    <li><a>
+                        <svg class="icon icon-telegram social__link">
+                          <use xlink:href="/img/svg/sprite.svg#telegram"></use>
+                        </svg></a></li>
+                    <li><a>
+                        <svg class="icon icon-vk social__link">
+                          <use xlink:href="/img/svg/sprite.svg#vk"></use>
+                        </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <ul>
+                <li class="footer-bottom--right">© 2022 г. АО “Саханефтегазсбыт”</li>
+                <ul class="footer-bottom--middle">
+                  <li><a>
+                      <svg class="icon icon-odnoklasniki social__link">
+                        <use xlink:href="/img/svg/sprite.svg#odnoklasniki"></use>
+                      </svg></a></li>
+                  <li><a>
+                      <svg class="icon icon-telegram social__link">
+                        <use xlink:href="/img/svg/sprite.svg#telegram"></use>
+                      </svg></a></li>
+                  <li><a>
+                      <svg class="icon icon-vk social__link">
+                        <use xlink:href="/img/svg/sprite.svg#vk"></use>
+                      </svg></a></li>
+                </ul>
+                <ul class="footer-bottom--logo">
+                  <li>Разработано в</li>
+                  <li>
+                    <svg class="icon icon-platformminilogo platformminilogo__icon">
+                      <use xlink:href="/img/svg/sprite.svg#platformminilogo"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+    <!--include ./footer-modals.pug-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <!--script(src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js")-->
+    <script src="libs/selectric/jquery.selectric.min.js"></script>
+    <script src="./js/slider.js"></script>
+  </body>
+</html>

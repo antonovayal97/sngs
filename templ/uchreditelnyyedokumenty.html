@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+    <link rel="stylesheet" href="libs/selectric/selectric.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="js/hystModal-0.4/src/hystmodal.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=e8eaf95f-54e3-4083-8a76-68504e3786f6&amp;lang=ru_RU" type="text/javascript"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!--link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css")-->
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="custommodalheadersearch" id="appSearch">
+        <div class="custommodalheadersearch--body">
+          <button>
+            <svg class="icon icon-searchBig searchBig__icon">
+              <use xlink:href="/img/svg/sprite.svg#searchBig"></use>
+            </svg>
+          </button>
+          <input placeholder="Перечень закупок у СМСП">
+        </div>
+      </div>
+      <div class="container">
+        <div class="header-content">
+          <nav class="nav" id="nav"> <a class="right__link" href="./"><i class="logo__header" id="logo_header"> 
+                <svg class="icon icon-logo main__logo">
+                  <use xlink:href="/img/svg/sprite.svg#logo"></use>
+                </svg></i></a>
+            <ul class="middle__links">
+              <li class="li__link" id="clients"><a href="/mapazs.html">Клиентам</a></li>
+              <li class="li__link" id="investor"><a href="/korporativnoyeupravleniye.html">Инвесторам</a></li>
+              <li class="li__link" id="zakupki"><a href="/market.html">Закупки</a></li>
+              <li class="li__link" id="company"><a href="/about.html">О компании          </a></li>
+              <li class="li__link"><a href="/novosti.html">Пресс-центр</a></li>
+              <li class="li__link"><a href="/contacts.html">Контакты</a></li>
+            </ul>
+            <ul class="left__links">
+              <li class="li__link"><a href="#">
+                  <button class="header__search" data-hystmodal="#modalSearchHeader">
+                    <svg class="icon icon-search header__search">
+                      <use xlink:href="/img/svg/sprite.svg#search"></use>
+                    </svg>
+                  </button></a></li>
+              <li class="li__link"><a href="#">
+                  <div class="header__cards">
+                    <svg class="icon icon-Vector header__card">
+                      <use xlink:href="/img/svg/sprite.svg#Vector"></use>
+                    </svg>
+                    <div>Топливные карты                          </div>
+                  </div></a></li>
+            </ul>
+            <div class="header__burger">
+              <svg class="icon icon-burgermenu burgermenu__link">
+                <use xlink:href="/img/svg/sprite.svg#burgermenu"></use>
+              </svg>
+              <svg class="icon icon-btnclose btnclose__link">
+                <use xlink:href="/img/svg/sprite.svg#btnclose"></use>
+              </svg>
+            </div>
+          </nav>
+          <ul class="mobile--header">
+            <li class="li__link" id="clients"><a href="/mapazs.html">Клиентам</a></li>
+            <li class="li__link" id="investor"><a href="/korporativnoyeupravleniye.html">Инвесторам</a></li>
+            <li class="li__link" id="zakupki"><a href="/market.html">Закупки</a></li>
+            <li class="li__link" id="company"><a href="/about.html">О компании          </a></li>
+            <li class="li__link"><a href="/novosti.html">Пресс-центр</a></li>
+            <li class="li__link"><a href="/contacts.html">Контакты</a></li>
+            <svg class="icon icon-btnclose burgermenu__link__btn">
+              <use xlink:href="/img/svg/sprite.svg#btnclose"></use>
+            </svg>
+          </ul>
+        </div>
+        <script src="./js/hystModal-0.4/dist/hystmodal.min.js"> </script>
+      </div>
+    </header>
+    <div class="container">
+      <div class="container">
+        <section> 
+          <div class="the-main-content"> 
+            <div class="left-menu-content">
+              <div class="left-menu-main"> 
+                <ul class="left-menu-main-links" id="left-menu-main-links"> 
+                  <ul class="left-menu-main-links--left" id="left-menu-main-links--left"> 
+                    <li class="left-menu-main-link"> <a href="/about.html">Общая информация</a></li>
+                    <li class="left-menu-main-link"> <a href="/missions.html">Миссия и стратегия</a></li>
+                    <li class="left-menu-main-link"> <a href="/rukovodstvo.html">Руководство</a></li>
+                    <li class="left-menu-main-link"> <a href="/partnersandclients.html">Партнеры и клиенты</a></li>
+                    <li class="left-menu-main-link"> <a href="/otvetstvennost.html">Ответственность</a></li>
+                  </ul>
+                  <ul class="left-menu-main-links--right" id="left-menu-main-links--right"> 
+                    <li class="left-menu-main-link"> <a href="/nashiproyekty.html">Наши проекты</a></li>
+                    <li class="left-menu-main-link"> <a href="/antimonopolnyykomplayens.html">Антимонопольный комплаенс</a></li>
+                    <li class="left-menu-main-link"> <a href="/uchreditelnyyedokumenty.html">Учредительные документы</a></li>
+                    <li class="left-menu-main-link"> <a href="/vakansii.html">Вакансии</a></li>
+                  </ul>
+                </ul>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+              </div>
+            </div>
+            <div class="right-content-main">
+              <h1 class="right-content-main--title">Учредительные документы</h1>
+              <div class="uchreditelnyyedokumenty-content antimonopolnyykomplayens-content">
+                <div class="antimonopolnyykomplayens-target--list--dowload">
+                  <svg class="icon icon-pdf pdf__icon">
+                    <use xlink:href="/img/svg/sprite.svg#pdf"></use>
+                  </svg><a href="#" download>Устав АО &quot;Саханефтегазсбыт (редакция №6)&quot;</a>
+                </div>
+                <div class="antimonopolnyykomplayens-target--list--dowload">
+                  <svg class="icon icon-pdf pdf__icon">
+                    <use xlink:href="/img/svg/sprite.svg#pdf"></use>
+                  </svg><a href="#" download>Постановление Правительства РС (Я) о создании Общества</a>
+                </div>
+                <div class="antimonopolnyykomplayens-target--list--dowload">
+                  <svg class="icon icon-pdf pdf__icon">
+                    <use xlink:href="/img/svg/sprite.svg#pdf"></use>
+                  </svg><a href="#" download>Свидетельство ФНС о гос. регистрации юридического лица</a>
+                </div>
+                <div class="antimonopolnyykomplayens-target--list--dowload">
+                  <svg class="icon icon-pdf pdf__icon">
+                    <use xlink:href="/img/svg/sprite.svg#pdf"></use>
+                  </svg><a href="#" download>Свидетельство о внесении записи в ЕГРЮЛ о юридическом лице</a>
+                </div>
+                <div class="antimonopolnyykomplayens-target--list--dowload">
+                  <svg class="icon icon-pdf pdf__icon">
+                    <use xlink:href="/img/svg/sprite.svg#pdf"></use>
+                  </svg><a href="#" download>Свидетельство о постановке на учет в налоговом органе</a>
+                </div>
+                <div class="antimonopolnyykomplayens-target--list--dowload">
+                  <svg class="icon icon-pdf pdf__icon">
+                    <use xlink:href="/img/svg/sprite.svg#pdf"></use>
+                  </svg><a href="#" download>Свидетельство о государственной регистрации, выданная МинЮстом РС Я</a>
+                </div>
+                <div class="antimonopolnyykomplayens-target--list--dowload">
+                  <svg class="icon icon-pdf pdf__icon">
+                    <use xlink:href="/img/svg/sprite.svg#pdf"></use>
+                  </svg><a href="#" download>Приказ &quot;О вступлении в должность генерального директора Общества&quot;</a>
+                </div>
+                <div class="antimonopolnyykomplayens-target--list--dowload">
+                  <svg class="icon icon-pdf pdf__icon">
+                    <use xlink:href="/img/svg/sprite.svg#pdf"></use>
+                  </svg><a href="#" download>Выписка из протокола №13-19 заседания Совета директоров АО &quot;Саханефтегазсбыт&quot;</a>
+                </div>
+                <div class="antimonopolnyykomplayens-target--list--dowload">
+                  <svg class="icon icon-link link__icon">
+                    <use xlink:href="/img/svg/sprite.svg#link"></use>
+                  </svg><a href="#" download>Уведомление о постановке на учет в налоговом органе юр.лица в качестве крупнейшего налогоплательщика</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <script src="./js/common.js"></script>
+    </div>
+    <footer class="footer" id="footer"> 
+      <div class="container"> 
+        <section class="footer-section">
+          <div class="footer-content">
+            <div class="footer-top">
+              <div class="footer-left">
+                <div class="footer-left-icon"><a class="right__link" href="./"><i class="logo__header" id="logo_header">
+                      <svg class="icon icon-mainlogowhite mainlogowhite__logo">
+                        <use xlink:href="/img/svg/sprite.svg#mainlogowhite"></use>
+                      </svg></i></a></div>
+                <div class="footer-left-links">
+                  <ul class="footer-left-links--ul">
+                    <li><a href="/mapazs.html">Клиентам</a></li>
+                    <li><a href="/korporativnoyeupravleniye.html">Инвесторам</a></li>
+                    <li><a href="/market.html">Закупки</a></li>
+                    <li><a href="/about.html">О компании</a></li>
+                    <li><a href="/contacts.html">Контакты</a></li>
+                    <li><a href="/novosti.html">Пресс-центр</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-right">
+                <div class="footer-right-con"><span>Топливные карты</span><a>+7-914-272-02-00</a></div>
+                <div class="footer-right-con"><span>Канцелярия (факс)</span><a>+7 (4112) 45-30-06</a></div>
+                <div class="footer-right-con">
+                  <ul class="footer-bottom--middle-table">
+                    <li><a>
+                        <svg class="icon icon-odnoklasniki social__link">
+                          <use xlink:href="/img/svg/sprite.svg#odnoklasniki"></use>
+                        </svg></a></li>
+                    <li><a>
+                        <svg class="icon icon-telegram social__link">
+                          <use xlink:href="/img/svg/sprite.svg#telegram"></use>
+                        </svg></a></li>
+                    <li><a>
+                        <svg class="icon icon-vk social__link">
+                          <use xlink:href="/img/svg/sprite.svg#vk"></use>
+                        </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <ul>
+                <li class="footer-bottom--right">© 2022 г. АО “Саханефтегазсбыт”</li>
+                <ul class="footer-bottom--middle">
+                  <li><a>
+                      <svg class="icon icon-odnoklasniki social__link">
+                        <use xlink:href="/img/svg/sprite.svg#odnoklasniki"></use>
+                      </svg></a></li>
+                  <li><a>
+                      <svg class="icon icon-telegram social__link">
+                        <use xlink:href="/img/svg/sprite.svg#telegram"></use>
+                      </svg></a></li>
+                  <li><a>
+                      <svg class="icon icon-vk social__link">
+                        <use xlink:href="/img/svg/sprite.svg#vk"></use>
+                      </svg></a></li>
+                </ul>
+                <ul class="footer-bottom--logo">
+                  <li>Разработано в</li>
+                  <li>
+                    <svg class="icon icon-platformminilogo platformminilogo__icon">
+                      <use xlink:href="/img/svg/sprite.svg#platformminilogo"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+    <!--include ./footer-modals.pug-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <!--script(src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js")-->
+    <script src="libs/selectric/jquery.selectric.min.js"></script>
+    <script src="./js/slider.js"></script>
+  </body>
+</html>
